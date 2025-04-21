@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #111;
+  color: #eee;
+}
+
+header {
+  text-align: center;
+  padding: 2em;
+  background: #222;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1em;
+  padding: 1em;
+}
+
+.card {
+  background: #1a1a1a;
+  border-radius: 8px;
+  overflow: hidden;
+  text-decoration: none;
+  color: white;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.card img {
+  width: 100%;
+  display: block;
+  height: auto;
+}
+
+.card h2 {
+  font-size: 1em;
+  padding: 0.5em;
+}
+
+footer {
+  text-align: center;
+  padding: 1em;
+  font-size: 0.8em;
+  background: #222;
+}
