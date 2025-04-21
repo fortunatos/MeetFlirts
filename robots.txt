@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /go.html
+Sitemap: https://www.meetflirts.live/sitemap.xml
