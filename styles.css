@@ -1,0 +1,103 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Font Settings */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #1a1a1a;
+    color: white;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 3em;
+    color: #ff6f61;
+}
+
+/* Navigation */
+nav ul {
+    list-style-type: none;
+    margin: 20px 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #ff6f61;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #fff;
+}
+
+/* Posts Section */
+.posts {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.post {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.post:hover {
+    transform: translateY(-10px);
+}
+
+.post img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.post h2 {
+    color: #ff6f61;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.post p {
+    font-size: 1em;
+    color: #ccc;
+}
+
+.post a {
+    color: #ff6f61;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.post a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 0.9em;
+    color: #888;
+}
