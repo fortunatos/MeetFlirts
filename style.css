@@ -1,55 +1,89 @@
+/* Estilos globais */
 body {
     font-family: Arial, sans-serif;
-    background-color: #111;
-    color: #fff;
+    line-height: 1.6;
     margin: 0;
     padding: 0;
+    color: #333;
+    background-color: #f9f9f9;
 }
 
+/* Cabeçalho */
 header {
-    background-color: #333;
-    padding: 10px;
-    text-align: center;
+    background: #007bff;
+    color: #fff;
+    padding: 1rem 0;
 }
 
-nav ul {
-    list-style-type: none;
-    margin: 0;
+header nav ul {
+    list-style: none;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 0;
 }
 
-nav ul li {
-    display: inline;
-    margin-right: 20px;
+header nav ul li {
+    margin: 0 15px;
 }
 
-nav ul li a {
+header nav ul li a {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
 }
 
-h1 {
-    color: #ff3366;
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Seção principal */
+main {
+    padding: 20px;
     text-align: center;
 }
 
-.cta a {
-    display: block;
+main h1 {
+    color: #007bff;
+}
+
+main p {
+    margin: 10px 0;
+}
+
+main .cta {
+    margin: 20px 0;
+}
+
+main .cta .button {
+    background: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+
+main .cta .button:hover {
+    background: #0056b3;
+}
+
+/* Rodapé */
+footer {
+    background: #333;
+    color: #fff;
     text-align: center;
+    padding: 10px 0;
     margin-top: 20px;
 }
 
-.cta img {
-    width: 300px;
-    height: auto;
-    border: 2px solid #ff3366;
-    border-radius: 5px;
-}
+/* Responsividade */
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+    }
 
-footer {
-    background-color: #333;
-    color: #aaa;
-    padding: 10px;
-    text-align: center;
+    header nav ul li {
+        margin: 10px 0;
+    }
 }
