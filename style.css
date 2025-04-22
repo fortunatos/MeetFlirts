@@ -90,3 +90,44 @@ footer {
         gap: 15px;
     }
 }
+
+/* Cabeçalho */
+header {
+    background: rgba(0, 0, 0, 0.85);
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    position: fixed; /* Fixa o menu no topo */
+    width: 100%; /* Ocupa toda a largura */
+    z-index: 1000; /* Garante que o menu fique acima de outros elementos */
+    top: 0;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center; /* Centraliza os itens do menu */
+    gap: 30px; /* Espaçamento entre os links */
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li {
+    display: inline-block;
+}
+
+header nav ul li a {
+    color: #ffe227;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #ff6f61;
+}
+
+/* Espaço para evitar sobreposição com o conteúdo */
+body {
+    padding-top: 60px; /* Adiciona espaço para o menu fixo */
+}
